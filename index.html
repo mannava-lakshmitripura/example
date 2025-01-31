@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object in HTML</title>
+</head>
+<body>
+    <h2>JSON Object Display</h2>
+    <pre id="jsonDisplay"></pre>
+
+    <script>
+        // Sample JSON object
+        const data = {
+           status:"ok"
+        };
+
+        // Display JSON in formatted text
+        document.getElementById("jsonDisplay").textContent = JSON.stringify(data, null, 4);
+    </script>
+</body>
+</html>
